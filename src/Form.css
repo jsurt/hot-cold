@@ -1,0 +1,39 @@
+form {
+    width: 380px;
+    padding: 20px;
+    margin: auto;
+    background: #394165;
+}
+
+input, button {
+    display: block;
+    width: 300px;
+    margin: auto;
+    font-size: 26px;
+    padding: 5px;
+    text-align: center;
+}
+
+input {
+    background: #50587c;
+    border: solid 1px #1f253d;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    background: #1F253D;
+    border: none;
+    color: #95a5a6;
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+}
+
+span {
+    font-size: 28px;
+    color: #f39c12;
+}

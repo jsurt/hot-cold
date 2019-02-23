@@ -1,0 +1,7 @@
+.guess-tracker-div {
+    overflow: auto;
+    width: 380px;
+    height: 75px;
+    margin: auto;
+    background: #11a8ab;
+}

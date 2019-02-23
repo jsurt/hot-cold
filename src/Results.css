@@ -1,0 +1,9 @@
+.results {
+    width: 380px;
+    margin: auto;
+    padding: 20px;
+    font-size: 28px;
+    color: #ffffff;
+    background: #ce2f48;
+    text-align: center;
+}

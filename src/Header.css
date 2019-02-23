@@ -1,0 +1,30 @@
+a, h1 {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info, .restart {
+    position: absolute;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.info {
+    top: 0;
+    left: 0;
+}
+
+.restart {
+    top: 0;
+    right: 0;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
