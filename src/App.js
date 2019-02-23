@@ -5,10 +5,12 @@ import Form from "./Form";
 import Guesses from "./Guesses";
 import "./App.css";
 
-class App extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {};
   }
+
   render() {
     return (
       <div>
@@ -20,5 +22,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
