@@ -33,7 +33,7 @@ p {
     text-align: center;
 }
 
-span {
+.guess-counter {
     font-size: 28px;
     color: #f39c12;
 }

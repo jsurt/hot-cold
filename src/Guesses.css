@@ -5,3 +5,20 @@
     margin: auto;
     background: #11a8ab;
 }
+
+.guess-tracker-list {
+    margin-top: 0px;
+}
+
+.guess-list-item {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+    display: inline;
+    padding: 5px;
+    width: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    background: #144c97;
+}

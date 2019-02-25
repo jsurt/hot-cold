@@ -5,42 +5,29 @@ export default class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      answer: Math.floor(Math.random() * 100 + 1),
-      guessCount: 0,
-      guesses: []
+      input: ""
     };
   }
 
-  handleSubmit = event => {
+  onSubmit = event => {
     event.preventDefault();
-    let guess = this.textInput.value;
-    this.setState({
-      guessCount: this.state.guessCount + 1
-    });
-    this.checkGuess(guess);
+    const text = this.textInput.value.trim();
+    this.props.onSubmit(text);
     this.textInput.value = "";
-  };
-
-  checkGuess = guess => {
-    if (isNaN(guess) || (1 > guess || guess > 100)) {
-      console.log(typeof guess);
-      alert("Please enter a number between 1 and 100");
-    } else {
-      console.log("Correct!");
-    }
   };
 
   render() {
     return (
-      <form onSubmit={e => this.handleSubmit(e)}>
+      <form onSubmit={this.onSubmit}>
         <input
           type="text"
           placeholder="Enter your guess"
           ref={input => (this.textInput = input)}
+          disabled={this.props.disabled}
         />
-        <button onClick={e => console.log(e.currentTarget)}>Guess</button>
+        <button disabled={this.props.disabled}>Guess</button>
         <p>
-          Guess# <span>{this.state.guessCount}</span>!
+          Guess# <span className="guess-counter">{this.props.guessCount}</span>!
         </p>
       </form>
     );
